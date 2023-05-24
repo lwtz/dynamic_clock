@@ -4,13 +4,9 @@ const secondsElement = document.getElementById('seconds');
 
 function updateTime() {
   const date = new Date();
-  let hours = date.getHours();
-  let minutes = date.getMinutes();
-  let seconds = date.getSeconds();
-
-  hours = hours < 10 ? '0' + hours : hours;
-  minutes = minutes < 10 ? '0' + minutes : minutes;
-  seconds = seconds < 10 ? '0' + seconds : seconds;
+  let hours = String(date.getHours()).padStart('2', '0');
+  let minutes = String(date.getMinutes()).padStart('2', '0');
+  let seconds = String(date.getSeconds()).padStart('2', '0');
 
   hoursElement.textContent = hours;
   minutesElement.textContent = minutes;
