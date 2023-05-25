@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Kollektif;
+  src: url('/assets/fonts/Kollektif.ttf');
+}
+
+* {
+  font-family: Kollektif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #0b486b, #f56217);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .clock {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 18.5rem;
+    width: 38.375rem;
+    background: transparent;
+    border-radius: 0.1875rem;
+    box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.5);
+
+    div {
+      height: 11.625rem;
+      width: 10.375rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      color: #f3e8e8;
+      background: rgba(5, 5, 5, 0.9);
+      box-shadow: 0.313rem 0.313rem 0.938rem rgba(0, 0, 0, 0.7);
+      border-radius: 0.438rem;
+      letter-spacing: 0.188rem;
+    }
+    span {
+      font-weight: bolder;
+      font-size: 5.75rem;
+
+      &:nth-child(2) {
+        font-size: 0.625rem;
+      }
+    }
+  }
+}
